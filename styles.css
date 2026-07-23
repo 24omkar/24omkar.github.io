@@ -170,13 +170,26 @@ section { padding: 96px 24px; max-width: var(--max); margin: 0 auto; }
 }
 
 /* ---------- about ---------- */
-.about-grid { display: grid; grid-template-columns: 320px 1fr; gap: 48px; align-items: start; }
-.about-card .card-key { color: var(--text-dimmer); font-size: 11px; letter-spacing: 0.06em; margin-top: 18px; }
-.about-card .card-key:first-child { margin-top: 0; }
-.about-card .card-val { font-size: 14px; margin-top: 4px; }
-.about-card .subtle { color: var(--text-dim); font-size: 13px; margin-top: 6px; }
-.about-title { font-family: var(--font-display); font-size: clamp(24px, 3vw, 32px); font-weight: 600; margin-bottom: 20px; line-height: 1.25; }
-.about-text p { color: var(--text-dim); margin-bottom: 16px; max-width: 600px; }
+.about-grid { display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: start; }
+.about-title {
+  font-family: var(--font-display); font-weight: 700;
+  font-size: clamp(30px, 4.4vw, 48px); line-height: 1.12; letter-spacing: -0.01em;
+  margin-bottom: 28px; max-width: 720px;
+}
+.about-text p { color: var(--text-dim); margin-bottom: 18px; max-width: 640px; font-size: 16.5px; }
+.about-links { display: flex; flex-direction: column; gap: 4px; padding-top: 10px; }
+.about-link {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 4px; font-size: 14.5px; color: var(--paper);
+  transition: color 0.2s, gap 0.2s;
+}
+.about-link:hover { color: var(--signal); gap: 16px; }
+.about-link-icon { width: 18px; height: 18px; flex-shrink: 0; color: var(--text-dimmer); }
+.about-link:hover .about-link-icon { color: var(--signal); }
+.about-links-divider { height: 1px; background: var(--line-soft); margin: 10px 4px; }
+.about-link-static { flex-direction: column; align-items: flex-start; gap: 4px; cursor: default; }
+.about-link-static:hover { color: var(--paper); }
+.about-link-static .card-key { color: var(--text-dimmer); font-size: 11px; letter-spacing: 0.06em; }
 
 /* ---------- skills ---------- */
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
