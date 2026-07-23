@@ -99,6 +99,13 @@ section { padding: 96px 24px; max-width: var(--max); margin: 0 auto; }
 
 /* ---------- hero ---------- */
 .hero { padding-top: 180px; padding-bottom: 60px; }
+.hero-with-photo { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
+.hero-text { flex: 1; min-width: 0; }
+.hero-photo { flex-shrink: 0; }
+.hero-photo-img {
+  width: 220px; height: 220px; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--line); box-shadow: 0 0 0 8px var(--ink-soft);
+}
 .eyebrow { color: var(--text-dim); font-size: 13px; margin-bottom: 24px; display: flex; align-items: center; gap: 8px; }
 .status-dot {
   width: 7px; height: 7px; border-radius: 50%; background: var(--signal-bright);
@@ -227,6 +234,8 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 860px) {
   .about-grid, .timeline-item { grid-template-columns: 1fr; }
   .skills-grid, .project-grid { grid-template-columns: 1fr 1fr; }
+  .hero-with-photo { flex-direction: column-reverse; align-items: flex-start; gap: 32px; }
+  .hero-photo-img { width: 140px; height: 140px; }
 }
 
 @media (max-width: 640px) {
