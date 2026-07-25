@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omkar Padave — Machine Learning &amp; AI Engineer</title>
+<meta name="description" content="Omkar Padave — ML/AI Engineer specializing in LLMs, RAG, computer vision, and production ML systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">op<span class="brand-dot">.</span>engineer</a>
+    <nav class="nav-links">
+      <a href="#about">about</a>
+      <a href="#pipeline">pipeline</a>
+      <a href="#skills">stack</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="nav-github mono" href="https://github.com/24omkar" target="_blank" rel="noopener">github ↗</a>
+    <a class="nav-cta" href="files/Omkar_Padave_Resume.pdf" target="_blank" rel="noopener">résumé.pdf</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner hero-with-photo">
+      <div class="hero-text">
+      <p class="eyebrow mono">model_card / v1.0 / status: <span class="status-dot"></span> available for hire</p>
+      <h1 class="hero-title">
+        Omkar Padave
+      </h1>
+      <p class="hero-role">Machine Learning &amp; AI Engineer — <span class="hl">LLMs, RAG &amp; production ML systems</span></p>
+      <p class="hero-desc">I build the pipeline from raw data to a model your users can trust in production — four years deep in fine-tuning, retrieval, and the unglamorous MLOps that keeps it all running.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">get in touch</a>
+        <a href="files/Omkar_Padave_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost">download résumé</a>
+      </div>
+      <div class="hero-meta mono">
+        <span>Dayton, OH</span>
+        <span class="sep">/</span>
+        <span>4+ yrs experience</span>
+        <span class="sep">/</span>
+        <span>MS CS @ Univ. of Dayton</span>
+      </div>
+      </div>
+      <div class="hero-photo">
+        <img src="Images/profile.jpg" alt="Omkar Padave" class="hero-photo-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- PIPELINE (signature element) -->
+  <section class="pipeline" id="pipeline">
+    <p class="section-label mono">// what I actually do, as a pipeline</p>
+    <div class="pipeline-diagram" id="pipelineDiagram" aria-label="RAG pipeline diagram: Ingest, Embed, Retrieve, Generate, Serve">
+      <svg viewBox="0 0 1000 220" class="pipeline-svg" preserveAspectRatio="xMidYMid meet">
+        <line x1="90" y1="110" x2="910" y2="110" class="pipeline-track"/>
+        <line x1="90" y1="110" x2="910" y2="110" class="pipeline-track-fill" id="trackFill"/>
+
+        <g class="node" data-i="0" transform="translate(90,110)">
+          <circle r="34" class="node-circle"/>
+          <text class="node-icon" y="6" text-anchor="middle">01</text>
+          <text class="node-label mono" y="64" text-anchor="middle">INGEST</text>
+          <text class="node-sub mono" y="82" text-anchor="middle">docs · logs · tables</text>
+        </g>
+
+        <g class="node" data-i="1" transform="translate(295,110)">
+          <circle r="34" class="node-circle"/>
+          <text class="node-icon" y="6" text-anchor="middle">02</text>
+          <text class="node-label mono" y="64" text-anchor="middle">EMBED</text>
+          <text class="node-sub mono" y="82" text-anchor="middle">vectors · chunks</text>
+        </g>
+
+        <g class="node" data-i="2" transform="translate(500,110)">
+          <circle r="34" class="node-circle"/>
+          <text class="node-icon" y="6" text-anchor="middle">03</text>
+          <text class="node-label mono" y="64" text-anchor="middle">RETRIEVE</text>
+          <text class="node-sub mono" y="82" text-anchor="middle">semantic search</text>
+        </g>
+
+        <g class="node" data-i="3" transform="translate(705,110)">
+          <circle r="34" class="node-circle"/>
+          <text class="node-icon" y="6" text-anchor="middle">04</text>
+          <text class="node-label mono" y="64" text-anchor="middle">GENERATE</text>
+          <text class="node-sub mono" y="82" text-anchor="middle">LLM + context</text>
+        </g>
+
+        <g class="node" data-i="4" transform="translate(910,110)">
+          <circle r="34" class="node-circle"/>
+          <text class="node-icon" y="6" text-anchor="middle">05</text>
+          <text class="node-label mono" y="64" text-anchor="middle">SERVE</text>
+          <text class="node-sub mono" y="82" text-anchor="middle">FastAPI · monitor</text>
+        </g>
+
+        <circle r="6" class="token" id="tokenDot"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <p class="section-label mono">// about</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="about-title">I'm Omkar, I'm based in Dayton and I build AI that ships.</h2>
+        <p>I'm a results-driven Machine Learning and AI Engineer with 4+ years building end-to-end AI/ML solutions — spanning classical ML, deep learning, generative AI, NLP, and computer vision. Most of my recent work lives at the intersection of LLMs and production systems: building RAG applications, fine-tuning models, and standing up the MLOps that lets a model survive contact with real users.</p>
+        <p>I care as much about the retrieval and evaluation layer as I do about the model itself — a good answer that arrives three seconds too late, or can't be traced back to its source, isn't actually a good answer. That's the part of this work I find most interesting. Currently pursuing my Master's at the University of Dayton, and open to ML/AI engineering roles.</p>
+      </div>
+      <aside class="about-links">
+        <a href="mailto:omkar24padave@gmail.com" class="about-link">
+          <svg class="about-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          <span>omkar24padave@gmail.com</span>
+        </a>
+        <a href="tel:+19373043613" class="about-link">
+          <svg class="about-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 11l5 2v4a2 2 0 0 1-2 2C11 19 5 13 5 5a2 2 0 0 1 1-2z"/></svg>
+          <span>+1 (937) 304-3613</span>
+        </a>
+        <a href="https://github.com/24omkar" target="_blank" rel="noopener" class="about-link">
+          <svg class="about-link-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          <span>github.com/24omkar</span>
+        </a>
+        <div class="about-links-divider"></div>
+        <div class="about-link about-link-static">
+          <span class="mono card-key">based in</span>
+          <span>Dayton, OH</span>
+        </div>
+        <div class="about-link about-link-static">
+          <span class="mono card-key">education</span>
+          <span>MS CS, Univ. of Dayton (2024–2026)</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <p class="section-label mono">// stack</p>
+    <h2 class="section-title">Tools I reach for</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group card">
+        <h3 class="mono">languages</h3>
+        <div class="tags">
+          <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group card">
+        <h3 class="mono">ai / ml</h3>
+        <div class="tags">
+          <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Scikit-Learn</span>
+          <span class="tag">Hugging Face Transformers</span><span class="tag">NLP</span><span class="tag">Computer Vision</span>
+          <span class="tag">Fine-Tuning</span><span class="tag">Model Evaluation</span>
+        </div>
+      </div>
+
+      <div class="skill-group card">
+        <h3 class="mono">generative ai</h3>
+        <div class="tags">
+          <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">LangGraph</span>
+          <span class="tag">OpenAI API</span><span class="tag">AWS Bedrock</span><span class="tag">AI Agents</span><span class="tag">Prompt Engineering</span>
+        </div>
+      </div>
+
+      <div class="skill-group card">
+        <h3 class="mono">retrieval &amp; data</h3>
+        <div class="tags">
+          <span class="tag">Embeddings</span><span class="tag">Semantic Search</span><span class="tag">ChromaDB</span>
+          <span class="tag">Pinecone</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-group card">
+        <h3 class="mono">backend &amp; mlops</h3>
+        <div class="tags">
+          <span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">MLflow</span>
+          <span class="tag">LangSmith</span><span class="tag">Model Monitoring</span><span class="tag">CI/CD</span>
+        </div>
+      </div>
+
+      <div class="skill-group card">
+        <h3 class="mono">cloud &amp; devops</h3>
+        <div class="tags">
+          <span class="tag">AWS (SageMaker, EC2, S3, Lambda)</span><span class="tag">Azure</span>
+          <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Terraform</span><span class="tag">Git</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <p class="section-label mono">// experience</p>
+    <h2 class="section-title">Where I've built this</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date mono">JUN 2022 — AUG 2024</div>
+        <div class="timeline-content card">
+          <h3>ML Developer — AI Systems</h3>
+          <p class="timeline-org mono">Konsultera Solutions Pvt. Ltd.</p>
+          <ul>
+            <li>Engineered end-to-end AI/ML solutions using Python, PyTorch, TensorFlow, and Scikit-Learn for NLP, recommendation, and predictive modeling use cases; optimized training and evaluation workflows to improve prediction accuracy and production performance.</li>
+            <li>Built Generative AI and RAG applications using LLaMA 2, OpenAI, Google Gemini, LangChain, ChromaDB, and Pinecone, enabling semantic retrieval and context-aware responses across structured and unstructured enterprise data.</li>
+            <li>Established production ML workflows with Docker, CI/CD, MLflow, and model monitoring — streamlining versioning, deployment, experiment tracking, and operational reliability.</li>
+            <li>Developed scalable model-serving services with FastAPI and REST APIs, integrating models with MySQL and MongoDB and deploying inference workloads across AWS Bedrock, EC2, Lambda, Azure, and Hugging Face Spaces.</li>
+            <li>Built computer vision and document intelligence pipelines using OpenCV, ViT, Swin Transformer, Donut, PaddleOCR, and spaCy to automate document classification, OCR, and named entity recognition.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date mono">APR 2020 — MAY 2022</div>
+        <div class="timeline-content card">
+          <h3>ML &amp; Data Engineering</h3>
+          <p class="timeline-org mono">Konsultera Solutions Pvt. Ltd.</p>
+          <ul>
+            <li>Built and optimized deep learning models using CNNs, RNNs, and Transformers for user behavior analysis, image understanding, and recommendation systems.</li>
+            <li>Developed real-time computer vision pipelines using YOLOv8 and U²-Net for object detection and image segmentation in production workflows.</li>
+            <li>Applied transfer learning, fine-tuning, and hyperparameter optimization to improve model accuracy, inference performance, and scalability.</li>
+            <li>Integrated ML pipelines with cloud-based APIs and data workflows to enable secure, low-latency predictions and campaign analytics.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <p class="section-label mono">// projects</p>
+    <h2 class="section-title">Things I've shipped</h2>
+
+    <div class="project-grid">
+      <div class="project-card card">
+        <div class="project-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6M9 9h2"/></svg>
+        </div>
+        <p class="project-tag mono">LLM · GENAI</p>
+        <h3>ATS Resume LLM App</h3>
+        <p>An LLM-powered resume optimization app using OpenAI and Google Gemini Pro, with prompt engineering and automated resume-to-job-description matching. Deployed on AWS.</p>
+        <p class="project-impact mono">↑ 50% ATS match score improvement</p>
+        <a href="https://github.com/24omkar/ATS-System" target="_blank" rel="noopener" class="project-link">
+          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.36-1.36"/></svg>
+          <span>View Project</span>
+        </a>
+      </div>
+
+      <div class="project-card card">
+        <div class="project-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 11v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/></svg>
+        </div>
+        <p class="project-tag mono">RAG · VECTOR DB</p>
+        <h3>Advanced Q&amp;A Chatbot on DataStax</h3>
+        <p>An internal Q&amp;A chatbot integrating DataStax Astra DB with vector embeddings and semantic search for accurate, context-aware answers from enterprise knowledge sources. Deployed via Hugging Face Spaces.</p>
+        <p class="project-impact mono">↓ 40% manual lookup &amp; human intervention</p>
+        <a href="https://github.com/24omkar" target="_blank" rel="noopener" class="project-link">
+          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.36-1.36"/></svg>
+          <span>View Project</span>
+        </a>
+      </div>
+
+      <div class="project-card card">
+        <div class="project-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <p class="project-tag mono">COMPUTER VISION · NLP</p>
+        <h3>Transformer Document Intelligence</h3>
+        <p>A multimodal document intelligence system using ViT, Swin Transformer, Donut, PaddleOCR, and spaCy NER for document classification, OCR, and entity extraction.</p>
+        <p class="project-impact mono">90%+ accuracy &amp; precision</p>
+        <a href="https://github.com/24omkar" target="_blank" rel="noopener" class="project-link">
+          <svg class="project-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.36-1.36"/></svg>
+          <span>View Project</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <p class="section-label mono">// contact</p>
+      <h2 class="contact-title">Let's build something that actually ships.</h2>
+      <p class="contact-desc">Open to ML/AI engineering roles and interesting collaborations. Reach out — I read everything myself.</p>
+      <div class="contact-links">
+        <a href="mailto:omkar24padave@gmail.com" class="contact-link">
+          <span class="mono">email</span>
+          <span>omkar24padave@gmail.com</span>
+        </a>
+        <a href="tel:+19373043613" class="contact-link">
+          <span class="mono">phone</span>
+          <span>+1 (937) 304-3613</span>
+        </a>
+        <a href="#" class="contact-link">
+          <span class="mono">location</span>
+          <span>Dayton, OH</span>
+        </a>
+        <a href="https://github.com/24omkar" target="_blank" rel="noopener" class="contact-link">
+          <span class="mono">github</span>
+          <span>github.com/24omkar</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="mono">© 2026 Omkar Padave — built with intent, deployed with care.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
