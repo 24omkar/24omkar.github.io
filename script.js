@@ -5,7 +5,7 @@ if (navToggle) {
   navToggle.addEventListener('click', () => {
     nav.classList.toggle('open');
   });
-  document.querySelectorAll('.nav-links a').forEach(link => {
+  document.querySelectorAll('.nav-mobile-links a').forEach(link => {
     link.addEventListener('click', () => nav.classList.remove('open'));
   });
 }
@@ -49,7 +49,7 @@ requestAnimationFrame(tickPipeline);
 
 // ---------- active nav link on scroll ----------
 const sections = document.querySelectorAll('main section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
+const navLinks = document.querySelectorAll('.nav-pill a, .nav-mobile-links a');
 
 const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
