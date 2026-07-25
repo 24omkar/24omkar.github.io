@@ -72,13 +72,9 @@ section { padding: 96px 24px; max-width: var(--max); margin: 0 auto; }
 /* ---------- nav ---------- */
 .nav {
   position: fixed; top: 20px; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: center;
   max-width: var(--max); margin: 0 auto; padding: 0 24px;
 }
-.brand { font-family: var(--font-display); font-weight: 600; font-size: 18px;
-  background: var(--ink); padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line-soft);
-}
-.brand-dot { color: var(--signal); }
 .nav-pill {
   display: flex; gap: 4px; background: var(--ink); border: 1px solid var(--line-soft);
   padding: 6px; border-radius: 999px; box-shadow: 0 4px 20px rgba(0,0,0,0.06);
@@ -89,15 +85,11 @@ section { padding: 96px 24px; max-width: var(--max); margin: 0 auto; }
 }
 .nav-pill a:hover { color: var(--paper); }
 .nav-pill a.active { background: var(--ink-soft); color: var(--signal); }
-.nav-cta {
-  font-family: var(--font-mono); font-size: 13px;
-  border: 1px solid var(--signal); color: var(--signal);
-  padding: 9px 16px; border-radius: 999px;
-  transition: background 0.2s, color 0.2s;
-  background: var(--ink);
+.nav-toggle {
+  display: none; flex-direction: column; gap: 4px; background: var(--ink);
+  border: 1px solid var(--line-soft); cursor: pointer; padding: 12px; border-radius: 999px;
+  position: absolute; right: 24px;
 }
-.nav-cta:hover { background: var(--signal); color: var(--ink); }
-.nav-toggle { display: none; flex-direction: column; gap: 4px; background: var(--ink); border: 1px solid var(--line-soft); cursor: pointer; padding: 12px; border-radius: 999px; }
 .nav-toggle span { width: 20px; height: 2px; background: var(--paper); display: block; }
 .nav-mobile-links { display: none; }
 
@@ -259,7 +251,7 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (max-width: 640px) {
-  .nav-pill, .nav-cta { display: none; }
+  .nav-pill { display: none; }
   .nav-toggle { display: flex; }
   .nav.open .nav-mobile-links {
     display: flex; flex-direction: column; position: absolute; top: 60px; left: 20px; right: 20px;
