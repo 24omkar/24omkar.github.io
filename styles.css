@@ -130,38 +130,6 @@ section { padding: 96px 24px; max-width: var(--max); margin: 0 auto; }
 .hero-meta { color: var(--text-dimmer); font-size: 13px; display: flex; gap: 10px; flex-wrap: wrap; }
 .sep { color: var(--line); }
 
-/* ---------- pipeline (signature element) ---------- */
-.pipeline { padding-top: 40px; padding-bottom: 100px; }
-.pipeline-diagram { overflow-x: auto; }
-.pipeline-svg { width: 100%; min-width: 640px; height: auto; display: block; }
-.pipeline-track { stroke: var(--line); stroke-width: 2; }
-.pipeline-track-fill {
-  stroke: var(--signal); stroke-width: 2;
-  stroke-dasharray: 820; stroke-dashoffset: 820;
-  animation: draw 3.5s ease-in-out infinite;
-}
-@keyframes draw {
-  0% { stroke-dashoffset: 820; }
-  45% { stroke-dashoffset: 0; }
-  75% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: -820; }
-}
-.node-circle { fill: var(--ink-soft); stroke: var(--line); stroke-width: 2; transition: stroke 0.3s, fill 0.3s; }
-.node.active .node-circle { stroke: var(--signal); fill: var(--ink); }
-.node-icon { fill: var(--text-dimmer); font-family: var(--font-mono); font-size: 12px; }
-.node.active .node-icon { fill: var(--signal-bright); }
-.node-label { fill: var(--paper); font-size: 13px; font-weight: 500; letter-spacing: 0.03em; }
-.node-sub { fill: var(--text-dimmer); font-size: 10px; }
-.token { fill: var(--amber); opacity: 0; }
-#tokenDot { animation: tokenMove 3.5s ease-in-out infinite; }
-@keyframes tokenMove {
-  0% { opacity: 0; transform: translateX(0); }
-  4% { opacity: 1; }
-  45% { transform: translateX(820px); opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 0; transform: translateX(820px); }
-}
-
 /* ---------- about ---------- */
 .about-grid { display: grid; grid-template-columns: 1fr 300px; gap: 64px; align-items: start; }
 .about-title {

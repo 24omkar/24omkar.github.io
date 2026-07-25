@@ -27,26 +27,6 @@ const io = new IntersectionObserver((entries) => {
 
 revealTargets.forEach(el => io.observe(el));
 
-// ---------- pipeline node activation, synced to the CSS draw animation ----------
-const nodes = document.querySelectorAll('.pipeline .node');
-const CYCLE_MS = 3500;
-const ACTIVE_WINDOW = CYCLE_MS * 0.45; // matches the 45% draw keyframe
-
-function tickPipeline() {
-  const t = (performance.now() % CYCLE_MS) / ACTIVE_WINDOW;
-  const progress = Math.min(t, 1);
-  nodes.forEach((node, i) => {
-    const threshold = i / (nodes.length - 1);
-    if (progress >= threshold) {
-      node.classList.add('active');
-    } else {
-      node.classList.remove('active');
-    }
-  });
-  requestAnimationFrame(tickPipeline);
-}
-requestAnimationFrame(tickPipeline);
-
 // ---------- active nav link on scroll ----------
 const sections = document.querySelectorAll('main section[id]');
 const navLinks = document.querySelectorAll('.nav-pill a, .nav-mobile-links a');

@@ -61,54 +61,6 @@
     </div>
   </section>
 
-  <!-- PIPELINE (signature element) -->
-  <section class="pipeline" id="pipeline">
-    <p class="section-label mono">// what I actually do, as a pipeline</p>
-    <div class="pipeline-diagram" id="pipelineDiagram" aria-label="RAG pipeline diagram: Ingest, Embed, Retrieve, Generate, Serve">
-      <svg viewBox="0 0 1000 220" class="pipeline-svg" preserveAspectRatio="xMidYMid meet">
-        <line x1="90" y1="110" x2="910" y2="110" class="pipeline-track"/>
-        <line x1="90" y1="110" x2="910" y2="110" class="pipeline-track-fill" id="trackFill"/>
-
-        <g class="node" data-i="0" transform="translate(90,110)">
-          <circle r="34" class="node-circle"/>
-          <text class="node-icon" y="6" text-anchor="middle">01</text>
-          <text class="node-label mono" y="64" text-anchor="middle">INGEST</text>
-          <text class="node-sub mono" y="82" text-anchor="middle">docs · logs · tables</text>
-        </g>
-
-        <g class="node" data-i="1" transform="translate(295,110)">
-          <circle r="34" class="node-circle"/>
-          <text class="node-icon" y="6" text-anchor="middle">02</text>
-          <text class="node-label mono" y="64" text-anchor="middle">EMBED</text>
-          <text class="node-sub mono" y="82" text-anchor="middle">vectors · chunks</text>
-        </g>
-
-        <g class="node" data-i="2" transform="translate(500,110)">
-          <circle r="34" class="node-circle"/>
-          <text class="node-icon" y="6" text-anchor="middle">03</text>
-          <text class="node-label mono" y="64" text-anchor="middle">RETRIEVE</text>
-          <text class="node-sub mono" y="82" text-anchor="middle">semantic search</text>
-        </g>
-
-        <g class="node" data-i="3" transform="translate(705,110)">
-          <circle r="34" class="node-circle"/>
-          <text class="node-icon" y="6" text-anchor="middle">04</text>
-          <text class="node-label mono" y="64" text-anchor="middle">GENERATE</text>
-          <text class="node-sub mono" y="82" text-anchor="middle">LLM + context</text>
-        </g>
-
-        <g class="node" data-i="4" transform="translate(910,110)">
-          <circle r="34" class="node-circle"/>
-          <text class="node-icon" y="6" text-anchor="middle">05</text>
-          <text class="node-label mono" y="64" text-anchor="middle">SERVE</text>
-          <text class="node-sub mono" y="82" text-anchor="middle">FastAPI · monitor</text>
-        </g>
-
-        <circle r="6" class="token" id="tokenDot"/>
-      </svg>
-    </div>
-  </section>
-
   <!-- ABOUT -->
   <section class="about" id="about">
     <p class="section-label mono">// about</p>
